@@ -11,6 +11,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "module": "esnext",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -19,7 +20,7 @@
       "@/*": ["src/*"],
       "@public/*": ["public/*"],
       "@shared/*": ["src/app/shared*"],
-      "@core/*": ["../../packages/isomorphic-core/src/*"]
+      "@core/*": ["packages/isomorphic-core/src/*"]
     },
     "plugins": [
       {
@@ -27,7 +28,6 @@
       }
     ]
   },
-  "extends": "typescript-config/nextjs.json",
   "include": [
     "next-env.d.ts",
     "additional.d.ts",

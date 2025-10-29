@@ -1,1 +1,0 @@
-'use strict';var o={normal:"font-normal",medium:"font-medium",semibold:"font-semibold",bold:"font-bold"};exports.a=o;
