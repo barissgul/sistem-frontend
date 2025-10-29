@@ -4,10 +4,10 @@ import { createContext, useContext } from 'react';
 
 interface CartContextType {
   addItemToCart: (item: any) => void;
-  removeItemFromCart: (id: string) => void;
-  clearItemFromCart: (id: string) => void;
-  isInCart: (id: string) => boolean;
-  getItemFromCart: (id: string) => any;
+  removeItemFromCart: (id: string | number) => void;
+  clearItemFromCart: (id: string | number) => void;
+  isInCart: (id: string | number) => boolean;
+  getItemFromCart: (id: string | number) => any;
   cartItems: any[];
   totalItems: number;
   totalPrice: number;
