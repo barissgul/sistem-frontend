@@ -3,7 +3,7 @@
 import { createContext, useContext } from 'react';
 
 interface CartContextType {
-  addItemToCart: (item: any) => void;
+  addItemToCart: (item: any, quantity?: number) => void;
   removeItemFromCart: (id: string | number) => void;
   clearItemFromCart: (id: string | number) => void;
   isInCart: (id: string | number) => boolean;
