@@ -1,12 +1,10 @@
 import type { Config } from "tailwindcss";
-import sharedConfig from "tailwind-config";
 
-const config: Pick<Config, "prefix" | "presets" | "content"> = {
+const config: Pick<Config, "content"> = {
   content: [
     "./src/**/*.tsx",
-    "./node_modules/rizzui/dist/*.{js,ts,jsx,tsx}", // must use this line to compile and generate our RizzUI components style
+    "./node_modules/rizzui/dist/*.{js,ts,jsx,tsx}",
   ],
-  presets: [sharedConfig],
 };
 
 export default config;
